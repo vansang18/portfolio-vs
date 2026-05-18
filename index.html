@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nguyễn Văn Sang - Portfolio cá nhân. Backend Developer chuyên nghiệp & Video Editor sáng tạo. Khám phá các dự án lập trình hệ thống và sản phẩm video độc đáo.">
+    <meta name="keywords" content="Nguyễn Văn Sang, Nguyen Van Sang, Backend Developer, Video Editor, Portfolio, Lập trình viên Backend, Dựng phim, Thiết kế video">
+    <meta name="author" content="Nguyễn Văn Sang">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nguyễn Văn Sang | Backend Developer & Video Editor">
+    <meta property="og:description" content="Sự giao thoa giữa Logic hệ thống và Sáng tạo hình ảnh. Xem các sản phẩm lập trình Backend và dựng phim chuyên nghiệp.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop">
+
+    <title>Nguyễn Văn Sang | Backend Developer & Video Editor</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Interactive Cursor Glow Background -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">NVS</span>
+                <span class="logo-dot">.</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+                    <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+                    <li><a href="#projects" class="nav-link">Dự án</a></li>
+                    <li><a href="#timeline" class="nav-link">Kinh nghiệm</a></li>
+                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge-container">
+                    <span class="hero-badge">
+                        <span class="badge-dot"></span> Sẵn sàng cho dự án mới
+                    </span>
+                </div>
+                <h1 class="hero-title">
+                    Xin chào, tôi là <br>
+                    <span class="gradient-text">Nguyễn Văn Sang</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Tôi là một <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Sự giao thoa hoàn hảo giữa **Tư duy Logic** của một Kỹ sư Backend và **Óc thẩm mỹ** của một Biên tập viên Video. Tôi xây dựng hệ thống máy chủ mạnh mẽ và kiến tạo những trải nghiệm thị giác sống động.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-fire"></i> Khám phá dự án
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa-solid fa-envelope"></i> Liên hệ ngay
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="visual-wrapper">
+                    <!-- Tech side (Backend) -->
+                    <div class="visual-card backend-card">
+                        <div class="card-header">
+                            <span class="circle red"></span>
+                            <span class="circle yellow"></span>
+                            <span class="circle green"></span>
+                            <span class="card-title"><i class="fa-solid fa-code text-blue"></i> main.js</span>
+                        </div>
+                        <div class="card-body code-font">
+                            <span class="code-keyword">const</span> server = require(<span class="code-string">'nvs-backend'</span>);<br>
+                            <span class="code-keyword">const</span> sang = <span class="code-keyword">new</span> Developer({<br>
+                            &nbsp;&nbsp;role: <span class="code-string">'Backend Developer'</span>,<br>
+                            &nbsp;&nbsp;skills: [<span class="code-string">'Node.js'</span>, <span class="code-string">'Docker'</span>, <span class="code-string">'APIs'</span>]<br>
+                            });<br>
+                            server.deploy(sang.build());<br>
+                            <span class="code-comment">// System status: ONLINE</span>
+                        </div>
+                    </div>
+
+                    <!-- Creative side (Video Editor) -->
+                    <div class="visual-card video-card">
+                        <div class="card-header">
+                            <span class="circle red"></span>
+                            <span class="circle yellow"></span>
+                            <span class="circle green"></span>
+                            <span class="card-title"><i class="fa-solid fa-video text-magenta"></i> timeline.prproj</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="timeline-visual">
+                                <div class="timeline-track audio-track">
+                                    <div class="track-label"><i class="fa-solid fa-music"></i> Audio</div>
+                                    <div class="track-block block-audio block-animate"></div>
+                                </div>
+                                <div class="timeline-track video-track-1">
+                                    <div class="track-label"><i class="fa-solid fa-clapperboard"></i> Video</div>
+                                    <div class="track-block block-video block-animate"></div>
+                                </div>
+                                <div class="timeline-track effect-track">
+                                    <div class="track-label"><i class="fa-solid fa-wand-magic-sparkles"></i> FX</div>
+                                    <div class="track-block block-fx block-animate"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="Scroll Down">
+                <span class="mouse-icon">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="subtitle">Giới Thiệu</span>
+                <h2 class="title">Về Bản Thân Tôi</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-img-area">
+                    <div class="profile-card">
+                        <div class="profile-frame">
+                            <div class="profile-glow"></div>
+                            <div class="profile-avatar">
+                                <!-- Abstract geometric graphic representing dual capabilities -->
+                                <svg viewBox="0 0 100 100" class="svg-avatar" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#00f2fe" />
+                                            <stop offset="100%" stop-color="#4facfe" />
+                                        </linearGradient>
+                                        <linearGradient id="avatarGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#f857a6" />
+                                            <stop offset="100%" stop-color="#ff5858" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#avatarGrad)" stroke-width="2" />
+                                    <circle cx="50" cy="50" r="38" fill="none" stroke="url(#avatarGrad2)" stroke-width="1.5" stroke-dasharray="5 5" />
+                                    <!-- Inner abstract logic x art shape -->
+                                    <polygon points="50,25 72,38 72,62 50,75 28,62 28,38" fill="rgba(11, 15, 25, 0.6)" stroke="url(#avatarGrad)" stroke-width="2" />
+                                    <path d="M50 25 L50 75 M28 38 L72 62 M28 62 L72 38" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+                                    <circle cx="50" cy="50" r="10" fill="url(#avatarGrad2)" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="profile-info-box">
+                            <h3 class="profile-name">Nguyễn Văn Sang</h3>
+                            <p class="profile-tagline">Logic & Creative</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <h3 class="about-subtitle">Giao lộ giữa hai thế giới đầy đam mê</h3>
+                    <p class="about-text">
+                        Chào bạn! Tôi là một **Lập trình viên Backend** có nền tảng tư duy cấu trúc mạnh mẽ, đồng thời là một **Video Editor** đam mê những khung hình chuyển động và âm điệu. Tôi không chỉ viết code để hệ thống hoạt động trơn tru mà còn dùng kỹ năng biên tập phim để kể những câu chuyện thu hút.
+                    </p>
+                    <p class="about-text">
+                        Sự kết hợp độc đáo này giúp tôi có tư duy giải quyết vấn đề đa chiều: vừa logic chặt chẽ trong phân tích hệ thống, vừa sáng tạo bay bổng trong cách trình bày và thiết kế trải nghiệm người dùng. Dù là tối ưu hóa API phức tạp hay căn chỉnh từng khung hình video theo nhịp nhạc, tôi luôn đặt sự tỉ mỉ và hiệu năng lên hàng đầu.
+                    </p>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-val">contact.sangnv@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Điện thoại:</span>
+                            <span class="info-val">09xx xxx xxx</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Địa chỉ:</span>
+                            <span class="info-val">TP. Hồ Chí Minh, Việt Nam</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Trạng thái:</span>
+                            <span class="info-val highlight-green">Sẵn sàng làm việc</span>
+                        </div>
+                    </div>
+
+                    <div class="about-action">
+                        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Hợp tác ngay</a>
+                        <a href="#" class="btn btn-outline" id="downloadCV"><i class="fa-solid fa-download"></i> Tải CV của tôi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="subtitle">Năng lực</span>
+                <h2 class="title">Kỹ Năng Chuyên Môn</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Backend Skills -->
+                <div class="skills-column backend-skills">
+                    <div class="column-header">
+                        <div class="icon-glow glow-blue">
+                            <i class="fa-solid fa-server text-blue"></i>
+                        </div>
+                        <h3 class="column-title">Backend Developer</h3>
+                    </div>
+                    <p class="column-desc">Xây dựng kiến trúc hệ thống mạnh mẽ, bảo mật, tối ưu hóa cơ sở dữ liệu và phát triển API hiệu năng cao.</p>
+                    
+                    <div class="skills-list">
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fa-brands fa-node-js text-green"></i>
+                                    <span>Node.js / Express</span>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill fill-blue" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fa-solid fa-database text-blue"></i>
+                                    <span>PostgreSQL / MySQL / MongoDB</span>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill fill-blue" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fa-brands fa-docker text-blue-light"></i>
+                                    <span>Docker & Containerization</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill fill-blue" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fa-solid fa-network-wired text-purple"></i>
+                                    <span>RESTful APIs / WebSockets / Microservices</span>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill fill-blue" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Editing Skills -->
+                <div class="skills-column video-skills">
+                    <div class="column-header">
+                        <div class="icon-glow glow-magenta">
+                            <i class="fa-solid fa-film text-magenta"></i>
+                        </div>
+                        <h3 class="column-title">Video Editor & Creative</h3>
+                    </div>
+                    <p class="column-desc">Tạo ra các thước phim điện ảnh cuốn hút, kỹ xảo mượt mà, màu sắc chuyên nghiệp và âm thanh sống động.</p>
+                    
+                    <div class="skills-list">
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fa-solid fa-scissors text-magenta"></i>
+                                    <span>Video Editing (Premiere Pro)</span>
+                                </div>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill fill-magenta" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fa-solid fa-wand-magic-sparkles text-yellow"></i>
+                                    <span>Motion Graphics (After Effects)</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill fill-magenta" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fa-solid fa-palette text-cyan"></i>
+                                    <span>Color Grading (DaVinci Resolve)</span>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill fill-magenta" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <div class="skill-name-icon">
+                                    <i class="fa-solid fa-volume-high text-orange"></i>
+                                    <span>Sound Design & Mixing</span>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill fill-magenta" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="subtitle">Sản phẩm</span>
+                <h2 class="title">Dự Án Tiêu Biểu</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="backend">Backend Dev</button>
+                <button class="filter-btn" data-filter="video">Video Production</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                
+                <!-- Project 1: Backend -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-img-wrapper">
+                        <!-- Custom dark high-tech vector graphics via inline CSS & SVG -->
+                        <div class="project-img-placeholder bg-backend">
+                            <i class="fa-solid fa-network-wired placeholder-icon text-blue"></i>
+                            <div class="placeholder-overlay">SYSTEM API ACTIVE</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag tag-backend">Backend</span>
+                        <h3 class="project-title">E-Commerce Microservices API</h3>
+                        <p class="project-desc">
+                            Hệ thống API thương mại điện tử kiến trúc Microservices hiệu năng cao. Tích hợp thanh toán trực tuyến, quản lý đơn hàng thời gian thực và tự động hóa email.
+                        </p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>Docker</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Video -->
+                <div class="project-card" data-category="video" data-video-src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder bg-video">
+                            <i class="fa-solid fa-play placeholder-icon text-magenta"></i>
+                            <div class="placeholder-overlay">CLICK TO PLAY</div>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link play-video-btn" aria-label="Play Video"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag tag-video">Video Production</span>
+                        <h3 class="project-title">Cinematic Travel Showreel</h3>
+                        <p class="project-desc">
+                            Thước phim du lịch nghệ thuật với nhịp điệu nhanh, hiệu ứng chuyển cảnh mượt mà, và kỹ thuật căn chỉnh màu sắc (Color Grading) phong cách Cinematic Teal & Orange.
+                        </p>
+                        <div class="project-tech">
+                            <span>Premiere Pro</span>
+                            <span>DaVinci Resolve</span>
+                            <span>Sound Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Backend -->
+                <div class="project-card" data-category="backend">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder bg-backend">
+                            <i class="fa-solid fa-comments placeholder-icon text-blue"></i>
+                            <div class="placeholder-overlay">WEBSOCKET ONLINE</div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag tag-backend">Backend</span>
+                        <h3 class="project-title">Real-time Chat Engine</h3>
+                        <p class="project-desc">
+                            Máy chủ nhắn tin thời gian thực cực kỳ ổn định, hỗ trợ hàng ngàn kết nối đồng thời qua WebSockets. Tích hợp bộ nhớ đệm Redis và lưu trữ tin nhắn MongoDB.
+                        </p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Socket.io</span>
+                            <span>MongoDB</span>
+                            <span>Redis</span>
+                            <span>JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Video -->
+                <div class="project-card" data-category="video" data-video-src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder bg-video">
+                            <i class="fa-solid fa-play placeholder-icon text-magenta"></i>
+                            <div class="placeholder-overlay">CLICK TO PLAY</div>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-link play-video-btn" aria-label="Play Video"><i class="fa-solid fa-circle-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag tag-video">Video Production</span>
+                        <h3 class="project-title">Tech Product Promo Commercial</h3>
+                        <p class="project-desc">
+                            Video quảng bá sản phẩm công nghệ cao cấp. Ứng dụng chuyển động đồ họa (Motion Graphics) phức tạp, cắt dựng nhịp nhàng và hiệu ứng âm thanh kích thích thị giác.
+                        </p>
+                        <div class="project-tech">
+                            <span>After Effects</span>
+                            <span>Premiere Pro</span>
+                            <span>Motion Graphics</span>
+                            <span>Sound FX</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Timeline) -->
+    <section class="timeline-section" id="timeline">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="subtitle">Hành trình</span>
+                <h2 class="title">Kinh Nghiệm & Học Vấn</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - Hiện tại</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Backend Developer & Video Freelancer</h3>
+                        <span class="timeline-org">Tự do hoạt động</span>
+                        <p class="timeline-text">
+                            - Phát triển các giải pháp Backend API tùy chỉnh cho doanh nghiệp vừa và nhỏ.<br>
+                            - Thực hiện sản xuất và biên tập các sản phẩm video quảng bá thương hiệu cá nhân, video short-form (Tiktok, Reels) đạt tương tác cao.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2024</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Kỹ sư Lập trình Backend</h3>
+                        <span class="timeline-org">Công ty Công nghệ TechCorp</span>
+                        <p class="timeline-text">
+                            - Thiết kế và tối ưu hóa hệ thống microservices phục vụ hơn 50,000 người dùng hàng ngày.<br>
+                            - Cải thiện tốc độ tải API lên 40% bằng cách cấu hình Redis caching và tinh chỉnh câu lệnh SQL phức tạp.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021 - 2022</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Video Editor Chuyên Nghiệp</h3>
+                        <span class="timeline-org">Truyền thông & Quảng cáo Media Agency</span>
+                        <p class="timeline-text">
+                            - Biên tập hàng loạt video quảng cáo sản phẩm, video phỏng vấn và TVC thương hiệu.<br>
+                            - Phối hợp với team Creative lên ý tưởng kịch bản phân cảnh và thiết kế âm thanh độc đáo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018 - 2022</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Cử nhân Công nghệ Thông tin</h3>
+                        <span class="timeline-org">Trường Đại học Công nghệ (UIT / VNU)</span>
+                        <p class="timeline-text">
+                            - Tốt nghiệp chuyên ngành Kỹ thuật Phần mềm.<br>
+                            - Tham gia nghiên cứu phát triển các dự án mã nguồn mở và đạt giải thưởng trong các cuộc thi Hackathon sinh viên.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="subtitle">Liên hệ</span>
+                <h2 class="title">Bắt Đầu Dự Án Mới</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-title">Cùng tạo nên điều kỳ diệu!</h3>
+                    <p class="contact-desc">
+                        Bạn có một ý tưởng hệ thống phức tạp cần hiện thực hóa? Hoặc một thước phim cần thổi hồn nghệ thuật? Hãy liên hệ với tôi, tôi luôn sẵn sàng lắng nghe và đồng hành.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">Gửi email cho tôi</span>
+                                <a href="mailto:contact.sangnv@gmail.com" class="contact-link">contact.sangnv@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span class="contact-label">Điện thoại di động</span>
+                                <a href="tel:0900000000" class="contact-link">09xx xxx xxx</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span class="contact-label">Địa điểm hoạt động</span>
+                                <span class="contact-text">TP. Hồ Chí Minh, Việt Nam</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" required placeholder=" ">
+                            <label for="name" class="form-label">Họ và Tên</label>
+                            <i class="fa-solid fa-user form-icon"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-control" required placeholder=" ">
+                            <label for="email" class="form-label">Địa chỉ Email</label>
+                            <i class="fa-solid fa-envelope form-icon"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" class="form-control" required placeholder=" ">
+                            <label for="subject" class="form-label">Tiêu đề</label>
+                            <i class="fa-solid fa-heading form-icon"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-control" rows="5" required placeholder=" "></textarea>
+                            <label for="message" class="form-label">Nội dung tin nhắn</label>
+                            <i class="fa-solid fa-message form-icon"></i>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Gửi tin nhắn</span> <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <!-- Contact Form Success Message -->
+                    <div class="contact-success" id="contactSuccess">
+                        <i class="fa-solid fa-circle-check success-icon"></i>
+                        <h4>Gửi tin nhắn thành công!</h4>
+                        <p>Cảm ơn bạn, tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.</p>
+                        <button class="btn btn-outline btn-sm" id="resetFormBtn">Gửi tin nhắn khác</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Nguyễn Văn Sang. Mọi quyền được bảo lưu.</p>
+            <p class="footer-design">Thiết kế với đam mê & <i class="fa-solid fa-heart text-magenta"></i></p>
+        </div>
+    </footer>
+
+    <!-- Video Modal Popup -->
+    <div class="video-modal" id="videoModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="video-container">
+                <iframe id="modalIframe" src="" title="Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
